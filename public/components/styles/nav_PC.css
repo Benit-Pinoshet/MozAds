@@ -145,7 +145,7 @@ div.menu_mobile {
     border-top: 2px solid var(--primary);
     border-bottom: 2px solid var(--primary);
     width: 300px;
-    display: block;
+    display: none;
     right: 0;
     transition: right .5s ease-in-out;
     animation: menuAnim .5s ease-in-out;
@@ -230,4 +230,5 @@ div.menu_mobile {
     to {
         transform: translateX(0);
     }
+
 }
