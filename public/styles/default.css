@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'encodeSans';
+    src: url('../fonts/encodeSans.ttf') format('truetype');
+    font-style: normal;
+
+
+}
+
+:root {
+    --background: #0B0F14;
+    --surface: #151A21;
+    --surface-2: #1B222B;
+    --surface-opacity: #1b222b91;
+    --text: #EAF2FF;
+    --muted: #98A2B3;
+    --primary: #22C55E;
+    --radius-card: 14px;
+    --border: 1px solid;
+    --radius-btn: 5px;
+    --card-padding: 10px;
+    --max-width: 1100px;
+    --font-p: 'encodeSans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-p);
+    color: var(--text);
+}
+
+.muted_text {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.default_primary_btn,
+.default_secondary_btn {
+    height: 35px;
+    font-weight: bold;
+    width: 90px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: var(--radius-btn);
+    padding: 5px;
+    color: var(--text);
+}
+
+.default_primary_btn {
+    background-color: var(--primary);
+    border: none;
+}
+
+.default_primary_btn:hover {
+    background-color: #16a34a;
+}
+
+.default_secondary_btn {
+    background-color: transparent;
+    border: 2px solid var(--surface-2);
+}
+
+.account_image {
+    border: 4px solid var(--surface-2);
+    border-radius: 50%;
+}
